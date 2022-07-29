@@ -113,10 +113,9 @@ a:active {
   text-decoration: none;
 }
 
-li{
-    margin: 10px 0;
+li:not(:last-child) {
+    padding-bottom: 15px;
 }
-
 
 hr {
   margin: 1rem 0;
