@@ -12,6 +12,21 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Make navbar fixed at the top */
+            .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        padding-top: 5px; /* Reduce padding to decrease height */
+        padding-bottom: 5px;
+    }
+            /* Add padding to the body content to prevent overlap with the navbar */
+            body {
+                padding-top: 50px; /* Adjust this value based on the height of your navbar */
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation-->
@@ -23,7 +38,8 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown"></li>
+                    </ul>
                 </div>
             </div>
         </nav>
