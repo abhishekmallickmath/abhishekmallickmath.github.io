@@ -14,17 +14,34 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             /* Make navbar fixed at the top */
-           .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        padding-top: 5px; /* Reduce padding to decrease height */
-        padding-bottom: 5px;
-    }
+            .navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                padding-top: 5px; /* Reduce padding to decrease height */
+                padding-bottom: 5px;
+            }
             /* Add padding to the body content to prevent overlap with the navbar */
             body {
                 padding-top: 70px; /* Adjust this value based on the height of your navbar */
+            }
+
+            /* Increase left margin and width of the text */
+            .centered-content {
+                margin-left: 120px; /* Adjusted left margin */
+                max-width: 80%; /* Increase width */
+            }
+
+            /* Add extra space between headings and list */
+            h4 {
+                margin-bottom: 20px; /* Increase space below headings */
+            }
+
+            /* Style for darker italic text */
+            .dark-italic {
+                color: #333; /* Darker color for italic text */
+                font-style: italic; /* Ensure the text is italicized */
             }
         </style>
     </head>
@@ -46,51 +63,34 @@
         <!-- Product section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-4"><img class="card-img-top mb-5 mb-md-0" src="PXL_20220415_095615639_36.jpg" alt="..." /></div>
-                    <div class="col-md-6">
-                             <body>
-      <h4>Research</h4>
-      <p>
-         <ul style="list-style-type:square">
-             
- <li> <a href="https://arxiv.org/pdf/2002.02326.pdf" target="_blank" style="color: darkblue"> Corks, involutions and Heegaard Floer homology</a> (with Irving Dai and Matthew Hedden), <i><span style="color: ">Journal of the European Mathematical Society,</span></i> 25(6) (2023), 2319-2389.</li>
-             
+                <div class="row gx-4 gx-lg-5 align-items-center centered-content">
+                    <div class="col-md-8">
+                        <body>
+                            <!-- Heegaard Floer invariants -->
+                            <h4 style="font-size: 18px;">Heegaard Floer invariants</h4>
+                            <ol style="list-style-type: decimal;">
+                                <li><a href="https://arxiv.org/pdf/2002.02326.pdf" target="_blank" style="color: darkblue"> Corks, involutions and Heegaard Floer homology</a> (with Irving Dai and Matthew Hedden), <i class="dark-italic">Journal of the European Mathematical Society,</i> 25(6) (2023), 2319-2389.</li>
+                                <li><a href="https://arxiv.org/pdf/2201.01875.pdf" target="_blank" style="color: darkblue">Equivariant knots and knot Floer homology </a> (with Irving Dai and Matthew Stoffregen) <i class="dark-italic">Journal of Topology,</i> 16(3) (2023), 1167-1236.</li>
+                                <li><a href="https://arxiv.org/pdf/2201.07299.pdf" target="_blank" style="color: darkblue"> Knot Floer homology and surgery on equivariant knots </a> to appear in the <i class="dark-italic">Journal of Topology.</i></li>
+                                <li><a href="https://arxiv.org/pdf/2207.14187.pdf" target="_blank" style="color: darkblue"> The (2,1)-cable of the figure-eight knot is not smoothly slice </a> (with Irving Dai, Sungkyung Kang, JungHwan Park and Matthew Stoffregen) to appear in the <i class="dark-italic">Inventiones Mathematicae.</i></li>
+                                <li><a href="https://arxiv.org/pdf/2209.07512.pdf" target="_blank" style="color: darkblue"> Rank-expanding satellites, Whitehead doubles, and Heegaard Floer homology</a> (with Irving Dai, Matthew Hedden, and Matthew Stoffregen).</li>
+                                <li><a href="https://arxiv.org/pdf/2312.08258.pdf" target="_blank" style="color: darkblue"> Gompf's cork and Heegaard Floer homology</a> (with Irving Dai, and Ian Zemke), <i class="dark-italic">International Mathematics Research Notices</i>, 2024, 18, 12663-12682.</li>
+                                <li><a href="https://arxiv.org/pdf/2409.02192" target="_blank" style="color: darkblue"> A note on cables and the involutive concordance invariants</a> (with Kristen Hendricks).</li>
+                            </ol>
 
-<li> <a href="https://arxiv.org/pdf/2201.01875.pdf"  target="_blank" style="color: darkblue">Equivariant knots and knot Floer homology </a> (with Irving Dai and Matthew Stoffregen) <i><span style="color: ">Journal of Topology,</span></i> 16(3) (2023), 1167-1236.</li>
-             
-
-<li><a href="https://arxiv.org/pdf/2201.07299.pdf"  target="_blank" style="color: darkblue"> Knot Floer homology and surgery on equivariant knots </a> to appear in the <i><span style="color: ">Journal of Topology.</span></i> </li>
-    
-    
-<li><a href="https://arxiv.org/pdf/2207.14187.pdf"  target="_blank" style="color: darkblue"> The (2,1)-cable of the figure-eight knot is not smoothly slice </a> (with Irving Dai, Sungkyung Kang, JungHwan Park and Matthew Stoffregen) to appear in the <i><span style="color: ">Inventiones Mathematicae.</span></i> </li>
-             
-             
- <li><a href="https://arxiv.org/pdf/2209.07512.pdf"  target="_blank" style="color: darkblue"> Rank-expanding satellites, Whitehead doubles, and Heegaard Floer homology</a> (with Irving Dai, Matthew Hedden, and Matthew Stoffregen).</li>   
-             
-             
-  <li><a href="https://arxiv.org/pdf/2304.05997.pdf"  target="_blank" style="color: darkblue"> From diffeomorphisms to exotic phenomena in small 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li> 
-             
-             
-<li><a href="https://arxiv.org/pdf/2306.08607.pdf"  target="_blank" style="color: darkblue"> Exotic Dehn twists on 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>  
-             
-             
-<li><a href="https://arxiv.org/pdf/2309.02309.pdf"  target="_blank" style="color: darkblue"> Involutions and the Chern-Simons filtration in instanton Floer homology</a> (with Antonio Alfieri, Irving Dai, and Masaki Taniguchi).</li> 
-             
-            
-<li><a href="https://arxiv.org/pdf/2312.08258.pdf"  target="_blank" style="color: darkblue"> Gompf's cork and Heegaard Floer homology</a> (with Irving Dai, and Ian Zemke) to appear in the <i><span style="color: ">International Mathematics Research Notices.</span></i></li> 
-             
-
-<li><a href="https://arxiv.org/pdf/2406.11773"  target="_blank" style="color: darkblue"> On localizing groups of exotic diffeomorphisms of 4-manifolds</a> (with Hokuto Konno).</li>
-             
-<li><a href="https://arxiv.org/pdf/2409.02192"  target="_blank" style="color: darkblue"> A note on cables and the involutive concordance invariants</a> (with Kristen Hendricks).</li>  
-             
-<li><a href="https://arxiv.org/pdf/2409.07287"  target="_blank" style="color: darkblue"> Exotically knotted closed surfaces from Donaldson's diagonalization for families</a> (with Hokuto Konno, and Masaki Taniguchi).</li>             
-             
-</ul>
-           
-  
-  
-    
+                            <!-- Gauge theoretic invariants -->
+                            <h4 style="font-size: 18px; margin-left: 0;">Gauge theoretic invariants</h4>
+                            <ol style="list-style-type: decimal; margin-top: -10px;"> <!-- Adjust margin for alignment -->
+                                <li><a href="https://arxiv.org/pdf/2304.05997.pdf" target="_blank" style="color: darkblue"> From diffeomorphisms to exotic phenomena in small 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
+                                <li><a href="https://arxiv.org/pdf/2306.08607.pdf" target="_blank" style="color: darkblue"> Exotic Dehn twists on 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
+                                <li><a href="https://arxiv.org/pdf/2309.02309.pdf" target="_blank" style="color: darkblue"> Involutions and the Chern-Simons filtration in instanton Floer homology</a> (with Antonio Alfieri, Irving Dai, and Masaki Taniguchi).</li>
+                                <li><a href="https://arxiv.org/pdf/2406.11773" target="_blank" style="color: darkblue"> On localizing groups of exotic diffeomorphisms of 4-manifolds</a> (with Hokuto Konno).</li>
+                                <li><a href="https://arxiv.org/pdf/2409.07287" target="_blank" style="color: darkblue"> Exotically knotted closed surfaces from Donaldson's diagonalization for families</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
+                            </ol>
+                        </body>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
