@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -33,15 +33,26 @@
                 max-width: 80%; /* Increase width */
             }
 
+            /* Adjust the top margin for the first heading to move it higher */
+            h4:first-of-type {
+                margin-top: 0; /* Reduce top margin for first heading */
+            }
+
             /* Add extra space between headings and list */
             h4 {
-                margin-bottom: 20px; /* Increase space below headings */
+                margin-bottom: 30px; /* Increase space below headings */
+            }
+
+            /* Add vertical space between list items */
+            ol li {
+                margin-bottom: 15px; /* Add space between list items */
             }
 
             /* Style for darker italic text */
             .dark-italic {
-                color: #333; /* Darker color for italic text */
+                color: #111; /* Use an even darker shade for the italic text */
                 font-style: italic; /* Ensure the text is italicized */
+                font-weight: 400; /* Apply a lighter bold effect (between 400 and 700) */
             }
         </style>
     </head>
@@ -80,7 +91,7 @@
 
                             <!-- Gauge theoretic invariants -->
                             <h4 style="font-size: 18px; margin-left: 0;">Gauge theoretic invariants</h4>
-                            <ol style="list-style-type: decimal;" start="8"> <!-- Adjust margin for alignment -->
+                            <ol style="list-style-type: decimal;" start="8">
                                 <li><a href="https://arxiv.org/pdf/2304.05997.pdf" target="_blank" style="color: darkblue"> From diffeomorphisms to exotic phenomena in small 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
                                 <li><a href="https://arxiv.org/pdf/2306.08607.pdf" target="_blank" style="color: darkblue"> Exotic Dehn twists on 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
                                 <li><a href="https://arxiv.org/pdf/2309.02309.pdf" target="_blank" style="color: darkblue"> Involutions and the Chern-Simons filtration in instanton Floer homology</a> (with Antonio Alfieri, Irving Dai, and Masaki Taniguchi).</li>
