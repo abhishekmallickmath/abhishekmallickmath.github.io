@@ -28,9 +28,9 @@
         body {
             padding-top: 70px;
             background-image: url('back_pink.png');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat; /* Adjust this value based on the height of your navbar */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Adjust this value based on the height of your navbar */
         }
 
         /* Increase left margin and width of the text */
@@ -77,6 +77,16 @@
             text-decoration: none;  /* Remove underline from active links */
             color: #bbb;  /* Slightly lighter color for the active link */
         }
+
+        /* Underline for List of Papers heading */
+        .underline {
+            text-decoration: underline;
+        }
+
+        /* Smaller font for subheadings */
+        .subheading {
+            font-size: 16px; /* Smaller size to make it look like a subheading */
+        }
     </style>
 </head>
 <body>
@@ -105,8 +115,15 @@
         <div class="container px-4 px-lg-5 my-5">
             <div class="row gx-4 gx-lg-5 align-items-center centered-content">
                 <div class="col-md-8">
-                    <!-- Heegaard Floer invariants -->
-                    <h4 style="font-size: 18px;">Heegaard Floer invariants</h4>
+                    <!-- Research Interest -->
+                    <h4 style="font-size: 18px;">Research Interest</h4>
+                    <p>I am interested in low-dimensional topology. My research to date has focused on using the tools from various Floer homology and gauge theoretic invariants to study knot concordance, homology bordism group, exotic smooth structures on 4-manifolds, knotted surfaces in 4-manifolds, and diffeomorphism groups of 4-manifolds.</p>
+
+                    <!-- List of Papers with underline -->
+                    <h4 class="underline" style="font-size: 18px;">List of Papers</h4>
+
+                    <!-- Heegaard Floer invariants as subheading -->
+                    <h4 class="subheading" style="font-size: 16px;">Heegaard Floer invariants</h4>
                     <ol style="list-style-type: decimal;">
                         <li><a href="https://arxiv.org/pdf/2002.02326.pdf" target="_blank" style="color: darkblue"> Corks, involutions and Heegaard Floer homology</a> (with Irving Dai and Matthew Hedden), <i class="dark-italic">Journal of the European Mathematical Society,</i> 25(6) (2023), 2319-2389.</li>
                         <li><a href="https://arxiv.org/pdf/2201.01875.pdf" target="_blank" style="color: darkblue">Equivariant knots and knot Floer homology </a> (with Irving Dai and Matthew Stoffregen) <i class="dark-italic" style="color: black">Journal of Topology,</i> 16(3) (2023), 1167-1236.</li>
@@ -117,8 +134,8 @@
                         <li><a href="https://arxiv.org/pdf/2409.02192" target="_blank" style="color: darkblue"> A note on cables and the involutive concordance invariants</a> (with Kristen Hendricks).</li>
                     </ol>
 
-                    <!-- Gauge theoretic invariants -->
-                    <h4 style="font-size: 18px; margin-left: 0;">Gauge theoretic invariants</h4>
+                    <!-- Gauge theoretic invariants as subheading -->
+                    <h4 class="subheading" style="font-size: 16px;">Gauge theoretic invariants</h4>
                     <ol style="list-style-type: decimal;" start="8">
                         <li><a href="https://arxiv.org/pdf/2304.05997.pdf" target="_blank" style="color: darkblue"> From diffeomorphisms to exotic phenomena in small 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
                         <li><a href="https://arxiv.org/pdf/2306.08607.pdf" target="_blank" style="color: darkblue"> Exotic Dehn twists on 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>

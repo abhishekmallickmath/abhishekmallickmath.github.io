@@ -1,113 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>abhishek_mallick_math</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="favicon_trefoil.png" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            /* Make navbar fixed at the top */
-            .navbar {
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 1000;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                background-color: #343a40; /* Dark background for the entire navbar */
-            }
 
-            /* Add padding to the body content to prevent overlap with the navbar */
-            body {
-                padding-top: 50px; /* Adjust this value based on the height of your navbar */
-                background-image: url('back_pink.png');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>abhishek_mallick_math</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="favicon_trefoil.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+   <style>
+    /* Make navbar fixed at the top */
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #343a40;
+    }
 
-            /* Style the Home, Research, and Teaching nav links */
-            .nav-home, .nav-research, .nav-teaching, .nav-talks {
-                color: white; /* White text for all nav links */
-            }
+    /* Add padding to the body content to prevent overlap with the navbar */
+    body {
+        padding-top: 50px;
+        background-image: url('back_pink.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-            .nav-link {
-                padding: 10px 15px; /* Add some padding to links */
-                color: white; /* Make all nav links white by default */
-            }
+    /* Style the Home, Research, and Teaching nav links */
+    .nav-home,
+    .nav-research,
+    .nav-teaching,
+    .nav-talks {
+        color: white;
+    }
 
-            /* Change the text color on hover */
-            .nav-home:hover, .nav-research:hover, .nav-teaching:hover, .nav-talks:hover {
-                background-color: transparent; /* No background color on hover */
-                color: #ddd; /* Lighten link color on hover */
-            }
+    .nav-link {
+        padding: 10px 15px;
+        color: white;
+    }
 
-            /* Styling all nav links on hover */
-            .navbar-nav .nav-link:hover {
-                color: #ddd; /* Lighten link color on hover */
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Changed to navbar-dark for better contrast -->
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Abhishek Mallick</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                       <li class="nav-item" style="margin-right: 20px;"><a class="nav-link active" href="index.html">Home</a></li>
-                       <li class="nav-item" style="margin-right: 20px;"><a class="nav-link" href="research.html">Research</a></li>
-                       <li class="nav-item" style="margin-right: 20px;"><a class="nav-link" href="teaching.html">Teaching</a></li>
-                       <li class="nav-item" style="margin-right: 20px;"><a class="nav-link" href="talks.html">Talks</a></li>
-                       <li class="nav-item" style="margin-right: 20px;"><a class="nav-link" href="activities.html">Activities</a></li>                       
-                    </ul>
-                </div>
+    .nav-home:hover,
+    .nav-research:hover,
+    .nav-teaching:hover,
+    .nav-talks:hover {
+        background-color: transparent;
+        color: #ddd;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ddd;
+    }
+
+    /* Profile Image Styling */
+    .profile-img {
+        max-width: 80%; /* Adjusted to 80% for smaller size */
+        height: auto;
+        margin-top: 60px; /* Increased margin to push image down */
+    }
+
+    .profile-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .about-box {
+        flex: 1;
+        margin-left: 30px;
+    }
+
+    /* Increased space between research items */
+    .research-list li {
+        margin-bottom: 15px; /* Adjust the spacing as needed */
+    }
+</style>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Abhishek Mallick</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item" style="margin-right: 20px;"><a class="nav-link active"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item" style="margin-right: 20px;"><a class="nav-link"
+                            href="research.html">Research</a></li>
+                    <li class="nav-item" style="margin-right: 20px;"><a class="nav-link"
+                            href="teaching.html">Teaching</a></li>
+                    <li class="nav-item" style="margin-right: 20px;"><a class="nav-link" href="talks.html">Talks</a></li>
+                    <li class="nav-item" style="margin-right: 20px;"><a class="nav-link"
+                            href="activities.html">Activities</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Product section-->
-        <section class="py-5">
-            <div class="container px-3 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-4"><img class="card-img-top mb-5 mb-md-0" src="profile.jpg" alt="..." /></div>
-                    <div class="col-md-6">
-                        <h5>About</h5>
-                        <p>
-                            <ul style="list-style-type:square">
+    <!-- Main Section -->
+    <section class="py-5">
+        <div class="container px-3 px-lg-5 my-5">
+            <div class="profile-container">
+                <!-- Profile Image -->
+                <div class="col-md-4">
+                    <img class="profile-img" src="profile.jpg" alt="Profile picture of Abhishek Mallick" />
+                </div>
+                <!-- About Me Content -->
+                <div class="col-md-8 about-box">
+                    <h5>About</h5>
+                    <ul style="list-style-type:square">
                                 <li>Hi, I graduated from Michigan State University in 2021, where I was working under Matthew Hedden.</li>
                                 <li> I was a postdoctoral researcher at the Max Planck Institute for Mathematics, Bonn for the 2021-22 academic year.</li>
                                 <li> In Fall-2022, I was at MSRI, Berkeley, as a Postdoctoral Fellow for the Floer Homotopy Theory program</li>
                                 <li> From Spring-2023 to Spring 2025, I will be in Rutgers University as a Hill assistant professor, working with Kristen Hendricks </li>
                                 <li> Here is an article in the <a href="https://www.quantamagazine.org/mathematicians-prove-this-knot-cannot-solve-major-problem-20230202/"  target="_blank" style="color: darkblue"> Quanta Magazine</a> on a paper that I co-authored.</li>
                                 <li> Here is my <a href="abhishek_cv_web.pdf"  target="_blank" style="color: darkblue"> CV.</a></li>
-                                <li> In summer 2023, I supervised a DIMACS REU (with Hendricks). Here is an <a href="https://arxiv.org/pdf/2404.14578"  target="_blank" style="color: darkblue"> article </a> that my students Jay Patwardhan (Rutgers), Zheheng Xiao (Columbia) wrote.</li>
+                                <li> In summer 2023, I supervised a DIMACS REU (with Hendricks). <a href="https://arxiv.org/pdf/2404.14578"  target="_blank" style="color: darkblue">  Here is an article </a> that my students Jay Patwardhan (Rutgers), Zheheng Xiao (Columbia) wrote.</li>
                                 <li> I am teaching a graduate topics course at Rutgers titled <a href="https://www.math.rutgers.edu/academics/graduate-program/course-descriptions/1698-16-640-547-topology-of-manifolds"  target="_blank" style="color: darkblue"> 'Floer homology and low-dimensional topology'</a> in Spring 2024.</li>
                                 <li> I am co-organizing a special session at the JMM, 2025, <a href="https://jointmathematicsmeetings.org/meetings/national/jmm2025/2314_program_ss33.html"  target="_blank" style="color: darkblue"> 'Concordance and Cobordism in Low Dimensions'</a> with Maggie Miller and Ryan Stees. Together with other members of the g&ampt group in Rutgers, I am co-organizing the <a href="https://sites.google.com/view/rutgersgandt/schedule"  target="_blank" style="color: darkblue"> 'Rutgers Geometry and Topology Seminar'</a>.
                             </ul>
                         </p>
-                        <h5>Research interest</h5>
-<p>
-    <ul>
-        <li>Here is the <a href="research.html" style="color: darkblue">list of my papers.</a></li>
-        <li>I am interested in low-dimensional topology. My research to date has focused on using the tools from various Floer homology and gauge theoretic invariants to study knot concordance, homology bordism group, exotic smooth structures on 4-manifolds, knotted surfaces in 4-manifolds, and diffeomorphism groups of 4-manifolds.</li>
-        
-    </ul>
-</p>
-                        <h5>Contact</h5>
-                        <p>Email: abhishek.mallick@rutgers.edu</p>
-                    </div>
+                        <h5>Research</h5>
+                    <p>
+                    <ul>
+                        <ol style="list-style-type: decimal;">
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2002.02326.pdf" target="_blank" style="color: darkblue">Corks, involutions and Heegaard Floer homology</a> (with Irving Dai and Matthew Hedden), <i class="dark-italic">Journal of the European Mathematical Society,</i> 25(6) (2023), 2319-2389.</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2201.01875.pdf" target="_blank" style="color: darkblue">Equivariant knots and knot Floer homology</a> (with Irving Dai and Matthew Stoffregen) <i class="dark-italic" style="color: black">Journal of Topology,</i> 16(3) (2023), 1167-1236.</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2201.07299.pdf" target="_blank" style="color: darkblue">Knot Floer homology and surgery on equivariant knots</a> to appear in the <i class="dark-italic">Journal of Topology.</i></li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2207.14187.pdf" target="_blank" style="color: darkblue">The (2,1)-cable of the figure-eight knot is not smoothly slice</a> (with Irving Dai, Sungkyung Kang, JungHwan Park, and Matthew Stoffregen) to appear in the <i class="dark-italic">Inventiones Mathematicae.</i></li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2209.07512.pdf" target="_blank" style="color: darkblue">Rank-expanding satellites, Whitehead doubles, and Heegaard Floer homology</a> (with Irving Dai, Matthew Hedden, and Matthew Stoffregen).</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2312.08258.pdf" target="_blank" style="color: darkblue">Gompf's cork and Heegaard Floer homology</a> (with Irving Dai, and Ian Zemke), <i class="dark-italic">International Mathematics Research Notices</i>, 2024, 18, 12663-12682.</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2409.02192" target="_blank" style="color: darkblue">A note on cables and the involutive concordance invariants</a> (with Kristen Hendricks).</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2304.05997.pdf" target="_blank" style="color: darkblue">From diffeomorphisms to exotic phenomena in small 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2306.08607.pdf" target="_blank" style="color: darkblue">Exotic Dehn twists on 4-manifolds</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2309.02309.pdf" target="_blank" style="color: darkblue">Involutions and the Chern-Simons filtration in instanton Floer homology</a> (with Antonio Alfieri, Irving Dai, and Masaki Taniguchi).</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2406.11773" target="_blank" style="color: darkblue">On localizing groups of exotic diffeomorphisms of 4-manifolds</a> (with Hokuto Konno).</li>
+                            <li style="margin-bottom: 15px;"><a href="https://arxiv.org/pdf/2409.07287" target="_blank" style="color: darkblue">Exotically knotted closed surfaces from Donaldson's diagonalization for families</a> (with Hokuto Konno, and Masaki Taniguchi).</li>
+                        </ol>
+                    </ul>
+                    </p>
+                    <h5>Contact</h5>
+                    <p>Email: abhishek.mallick@rutgers.edu</p>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+</body>
+
 </html>
